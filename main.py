@@ -1,5 +1,3 @@
-import select
-from matplotlib.axis import XAxis
 import streamlit as st 
 from datetime import date
 import yfinance as yf
@@ -11,6 +9,7 @@ START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title("Prediksi Harga Saham ")
+st.subheader("by Agustio, Aura Syafa, Darry Pratama")
 
 stocks = ("AAPL", "MSFT", "AMZN", "FB", "GOOG", "INTC", "CSCO", "IBM", "ORCL", "QCOM", "TXN", "XOM")
 selected_stock = st.selectbox("Pilih Saham", stocks)
